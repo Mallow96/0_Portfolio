@@ -4,19 +4,29 @@ import LanSwtich from "./language.vue";
 import { ref } from "vue";
 
 const isToggled = ref(false);
+let delayTimer = null;
 
-const handleToggle = () => {
-  isToggled.value = !isToggled.value;
+const openMenu = () => {
+  isToggled.value = true;
+  if (delayTimer) {
+    clearTimeout(delayTimer);
+  }
+};
+
+const closeMenuDelayed = () => {
+  delayTimer = setTimeout(() => {
+    isToggled.value = false;
+  }, 300);
 };
 </script>
 
 <template>
   <div
     id="settings-container"
-    @mouseenter="handleToggle()"
-    @mouseleave="handleToggle()"
+    @mouseenter="openMenu()"
+    @mouseleave="closeMenuDelayed()"
   >
-    <button type="button" class="settings-button">
+    <button type="button" id="settings-btn">
       <span class="material-symbols-outlined"> settings </span>
     </button>
 
@@ -34,18 +44,39 @@ const handleToggle = () => {
 </template>
 
 <style scoped>
+.material-symbols-outlined {
+  display: block;
+  font-size: var(--settings-icon-size);
+}
+
 #settings-container {
   position: relative;
 }
 
 #settings-menu {
-  width: 300px;
-  height: 120px;
+  background-color: var(--color-bg-settings);
+
+  width: var(--settings-menu-w);
+  height: auto;
+  min-height: 120px;
+  border-radius: 0.7rem;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.3);
 
   position: absolute;
+  top: calc(
+    (var(--header-h) - var(--settings-icon-size)) / 2 +
+      var(--settings-icon-size)
+  );
   right: 0;
   transform-origin: top;
   perspective: 1000px;
+
+  z-index: 10;
+}
+
+#settings-btn {
+  aspect-ratio: 1 / 1;
+  display: block;
 }
 
 .drop-enter-active {

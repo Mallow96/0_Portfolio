@@ -1,4 +1,12 @@
 {
+  "navItems": {
+    "about": "About Me",
+    "skills": "Skills",
+    "experience": "Experience",
+    "portfolio": "Portfolio",
+    "contact": "Contact Me"
+  },
+
   "settings": {
     "title": "Settings",
     "darkMode": "Dark Mode",

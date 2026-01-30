@@ -6,9 +6,19 @@ import Settings from "./settings.vue";
 <template>
   <header class="flex justify-between items-center px-4">
     <Logo />
-    <p>test</p>
-    <Settings />
+    <nav>
+      <ol class="flex justify-between items-center gap-7">
+        <li v-for="(item, index) in $tm('navItems')" :key="index">
+          {{ $rt(item) }}
+        </li>
+        <li><Settings /></li>
+      </ol>
+    </nav>
   </header>
 </template>
 
-<style scoped></style>
+<style scoped>
+header {
+  height: var(--header-h);
+}
+</style>

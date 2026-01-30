@@ -48,8 +48,8 @@ const mainStore = useStore();
 
 .bool-toggle__slider {
   position: relative;
-  width: 48px;
-  height: 20px;
+  width: var(--viewmode-switch-slider-w);
+  height: var(--viewmode-switch-slider-h);
   border-radius: 999px;
   transition: background-color 0.3s ease;
   overflow: visible;
@@ -59,13 +59,15 @@ const mainStore = useStore();
 
 .bool-toggle__dot {
   position: absolute;
-  width: 28px;
-  height: 28px;
+  width: var(--viewmode-switch-dot-w);
+  height: var(--viewmode-switch-dot-w);
   border-radius: 50%;
   background: #ffffff;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 
-  top: calc((20px - 28px) / 2);
+  top: calc(
+    (var(--viewmode-switch-slider-h) - var(--viewmode-switch-dot-w)) / 2
+  );
   left: 0;
   transform: translateX(-4px) !important;
 
@@ -82,7 +84,7 @@ const mainStore = useStore();
 }
 
 .material-symbols-outlined {
-  font-size: 20px;
+  font-size: var(--viewmode-switch-icon-size);
   user-select: none;
   transition: color 0.3s ease, font-variation-settings 0.3s ease,
     opacity 0.2s ease;

@@ -1,4 +1,12 @@
 {
+  "navItems": {
+    "about": "關於我",
+    "skills": "專業技能",
+    "experience": "工作經歷",
+    "portfolio": "作品集",
+    "contact": "聯絡我"
+  },
+
   "settings": {
     "title": "設定中心",
     "darkMode": "深色模式",

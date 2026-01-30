@@ -11,6 +11,41 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  --color-bg: #ffffff;
+  --color-text: #1f2937;
+  --color-bg-settings: #f2f4f7;
+  /* --color-bg-lang-tab: #8c8b8b; */
+  --color-bg-main-btn: oklch(62.3% 0.214 259.815);
+
+  --header-h: 3.75rem;
+  --settings-icon-size: 1.5rem;
+  --settings-menu-w: 18.75rem;
+
+  --viewmode-switch-icon-size: 1.25rem;
+  --viewmode-switch-slider-w: 3rem;
+  --viewmode-switch-slider-h: 1.25rem;
+  --viewmode-switch-dot-w: 1.75rem;
+
+  --lang-swtich-tabs-w: 7.5rem;
+  --lang-swtich-tabs-h: 2.5rem;
+  --lang-swtich-tabs-fw: 0.875rem;
+  --lang-swtich-tabs-text: #9ca3af;
+  --lang-swtich-tabs-text-active: #ffffff;
+}
+
+html.dark {
+  --color-bg: #111827;
+  --color-text: #f9fafb;
+  --color-bg-settings: #525f7f;
+  --color-bg-lang-tab: #ffffff;
+  --lang-swtich-tabs-text: #9ca3af;
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 @layer base {

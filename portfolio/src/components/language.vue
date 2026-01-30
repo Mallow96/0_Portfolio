@@ -51,14 +51,12 @@ const toggleLang = () => {
 .lang-tabs {
   position: relative;
   display: flex;
-  width: 120px; /* 根據文字長度調整寬度 */
-  height: 36px;
-  background-color: #374151; /* gray-700, 或是用 rgba(0,0,0,0.2) */
+  width: var(--lang-swtich-tabs-w);
+  height: var(--lang-swtich-tabs-h);
   border-radius: 10px;
   padding: 4px;
-  pointer-events: none; /* 關鍵：讓點擊事件「穿透」到外層 div，統一處理切換 */
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  /* 避免點擊時出現藍框 */
+  pointer-events: none;
+  border: 1px solid rgb(180, 180, 180);
   -webkit-tap-highlight-color: transparent;
 }
 
@@ -70,7 +68,7 @@ const toggleLang = () => {
   /* 寬度為容器的一半減去內邊距 */
   width: calc(50% - 4px);
   height: calc(100% - 8px);
-  background-color: #ffffff;
+  background-color: var(--color-bg-main-btn);
   border-radius: 6px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
 
@@ -105,13 +103,12 @@ const toggleLang = () => {
 }
 
 .lang-tabs__btn span {
-  font-size: 14px;
-  font-weight: 600;
-  color: #9ca3af; /* gray-400 */
+  font-size: var(--lang-swtich-tabs-fw);
+  font-weight: bold;
+  color: var(--lang-swtich-tabs-text);
 }
 
-/* 被選中時的文字顏色 */
 .lang-tabs__btn.is-active span {
-  color: #111827; /* gray-900 (在白色滑塊上顯示深色字) */
+  color: var(--lang-swtich-tabs-text-active);
 }
 </style>
