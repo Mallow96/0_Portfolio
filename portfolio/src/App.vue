@@ -1,9 +1,11 @@
 <script setup>
-import HelloWorld from './components/HelloWorld.vue'
+import DevTest from "./components/HelloWorld.vue";
+import AppHeader from "./components/header.vue";
 </script>
 
 <template>
-  <HelloWorld msg="Vite + Vue" />
+  <!-- <DevTest /> -->
+  <AppHeader />
 </template>
 
 <style scoped></style>
