@@ -4,7 +4,7 @@ import Settings from "./settings.vue";
 </script>
 
 <template>
-  <header class="flex justify-between items-center px-4">
+  <header class="flex justify-between items-center">
     <Logo />
     <nav>
       <ol class="flex justify-between items-center gap-7">
@@ -19,6 +19,11 @@ import Settings from "./settings.vue";
 
 <style scoped>
 header {
-  height: var(--header-h);
+  min-height: var(--header-h);
+  padding: var(--header-padding-x) var(--header-padding-y);
+
+  background-color: var(--color-bg-header);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid gray;
 }
 </style>

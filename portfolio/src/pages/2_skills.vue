@@ -1,5 +1,5 @@
 <script setup></script>
 
-<template></template>
+<template><p>this is skills</p></template>
 
 <style scoped></style>

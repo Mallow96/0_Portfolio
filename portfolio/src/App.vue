@@ -22,6 +22,7 @@ watch(
 <template>
   <!-- <DevTest /> -->
   <AppHeader />
+  <router-view />
 </template>
 
 <style scoped></style>

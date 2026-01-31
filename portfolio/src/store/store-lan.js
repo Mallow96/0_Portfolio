@@ -1,7 +1,6 @@
 import { defineStore } from "pinia";
-import { ref, watch } from "vue";
+// import { ref, watch } from "vue";
 import { useStorage } from "@vueuse/core";
-// 注意：這裡匯入的是你在項目中設定好的 i18n 實例
 import i18n from "../i18n";
 
 export const useLangStore = defineStore("lang", () => {

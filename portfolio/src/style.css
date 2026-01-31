@@ -12,15 +12,21 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  --color-bg: #ffffff;
+  --color-bg: rgb(255, 255, 255);
   --color-text: #1f2937;
   --color-bg-settings: #f2f4f7;
   /* --color-bg-lang-tab: #8c8b8b; */
   --color-bg-main-btn: oklch(62.3% 0.214 259.815);
+  --color-bg-header: rgba(255, 255, 255, 0.7);
 
   --header-h: 3.75rem;
+  --header-padding-x: 0.75rem;
+  --header-padding-y: 4rem;
+  --gap-header-main: 2rem;
   --settings-icon-size: 1.5rem;
   --settings-menu-w: 18.75rem;
+
+  --container-w-main: 82.5rem;
 
   --viewmode-switch-icon-size: 1.25rem;
   --viewmode-switch-slider-w: 3rem;
@@ -35,7 +41,8 @@
 }
 
 html.dark {
-  --color-bg: #111827;
+  --color-bg: rgb(17, 24, 39);
+  --color-bg-header: rgba(17, 24, 39, 0.7);
   --color-text: #f9fafb;
   --color-bg-settings: #525f7f;
   --color-bg-lang-tab: #ffffff;
@@ -61,4 +68,23 @@ body {
 
 button {
   cursor: pointer;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+section {
+  padding-top: var(--gap-header-main);
+  max-width: var(--container-w-main);
+}
+
+#app {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
