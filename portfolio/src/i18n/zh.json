@@ -16,6 +16,9 @@
 
   "contact": {
     "title": "我的聯絡資訊",
-    "subtitle": "您可以透過以下方式聯繫我！"
+    "subtitle": "歡迎透過以下方式聯繫我。",
+    "email": "mencheliu@gmail.com",
+    "linkedin": "我的 LinkedIn",
+    "copied": "已複製電子郵件地址"
   }
 }

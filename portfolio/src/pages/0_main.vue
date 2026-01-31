@@ -16,7 +16,7 @@ import Contact from "../components/for-main/5_contact.vue";
 </template>
 
 <style scoped>
-section {
-  height: 100vh; /* 測試scroll 之後刪掉 */
-}
+/* section {
+  height: 100vh;}  */
+/* 測試scroll 之後刪掉 */
 </style>

@@ -16,6 +16,9 @@
 
   "contact": {
     "title": "Contact Me",
-    "subtitle": "Feel free to contact me via:"
+    "subtitle": "Feel free to contact me via:",
+    "email": "mencheliu@gmail.com",
+    "linkedin": "My LinkedIn Profile",
+    "copied": "Email Copied"
   }
 }
