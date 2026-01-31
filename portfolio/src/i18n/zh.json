@@ -12,5 +12,10 @@
     "darkMode": "深色模式",
     "lightMode": "亮色模式",
     "language": "語言切換"
+  },
+
+  "contact": {
+    "title": "我的聯絡資訊",
+    "subtitle": "您可以透過以下方式聯繫我！"
   }
 }

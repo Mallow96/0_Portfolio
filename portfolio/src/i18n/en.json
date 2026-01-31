@@ -12,5 +12,10 @@
     "darkMode": "Dark Mode",
     "lightMode": "Light Mode",
     "language": "Language"
+  },
+
+  "contact": {
+    "title": "Contact Me",
+    "subtitle": "Feel free to contact me via:"
   }
 }

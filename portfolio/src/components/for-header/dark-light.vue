@@ -1,5 +1,5 @@
 <script setup>
-import { useStore } from "../store/store-main";
+import { useStore } from "../../store/store-main";
 
 const mainStore = useStore();
 </script>

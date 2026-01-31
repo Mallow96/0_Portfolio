@@ -49,6 +49,10 @@ html.dark {
   --lang-swtich-tabs-text: #9ca3af;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 #app {
   display: flex;
   flex-direction: column;

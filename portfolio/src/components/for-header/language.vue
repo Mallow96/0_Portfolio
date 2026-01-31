@@ -1,5 +1,5 @@
 <script setup>
-import { useLangStore } from "../store/store-lan"; // 假設你的 Pinia Store 路徑
+import { useLangStore } from "../../store/store-lan"; // 假設你的 Pinia Store 路徑
 const langStore = useLangStore();
 
 const toggleLang = () => {

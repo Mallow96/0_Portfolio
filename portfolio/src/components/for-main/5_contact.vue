@@ -2,12 +2,17 @@
 
 <template>
   <section id="contact">
-    <h3>this is contact</h3>
+    <div class="titles">
+      <h2>{{ $t("contact.title") }}</h2>
+      <h4>{{ $t("contact.subtitle") }}</h4>
+    </div>
+
+    <div class="contact-links"></div>
   </section>
 </template>
 
 <style scoped>
 #contact {
-  scroll-margin-top: 80px;
+  scroll-margin-top: calc(var(--header-h) + var(--gap-header-main));
 }
 </style>
