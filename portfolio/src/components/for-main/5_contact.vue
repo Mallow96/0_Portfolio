@@ -6,4 +6,8 @@
   </section>
 </template>
 
-<style scoped></style>
+<style scoped>
+#contact {
+  scroll-margin-top: 80px;
+}
+</style>
