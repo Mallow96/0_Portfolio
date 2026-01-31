@@ -20,7 +20,7 @@ const copyEmail = async () => {
 
 <template>
   <section id="contact" class="main-section">
-    <div class="container">
+    <div class="container gap-13">
       <div class="titles flex flex-col gap-8">
         <h2>{{ $t("contact.title") }}</h2>
         <h4>{{ $t("contact.subtitle") }}</h4>
@@ -56,9 +56,9 @@ const copyEmail = async () => {
   background-color: rgba(21, 93, 251, 0.1);
 }
 
-.container {
+/* .container {
   gap: 3rem;
-}
+} */
 
 .contact-btn {
   display: block;
@@ -71,6 +71,17 @@ const copyEmail = async () => {
   justify-content: center;
   align-items: center;
   gap: 0.75rem;
+
+  transition: all 0.3s ease;
+}
+
+.contact-btn:hover {
+  background-color: rgba(128, 128, 128, 0.15);
+  transform: translateY(-2px);
+}
+
+.contact-btn:active {
+  scale: 95%;
 }
 
 .contact-btn i {
