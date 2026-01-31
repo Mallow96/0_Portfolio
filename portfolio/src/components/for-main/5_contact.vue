@@ -29,7 +29,7 @@ const copyEmail = async () => {
       <div class="contact-links flex justify-center items-center gap-20">
         <button id="email-btn" class="contact-btn" @click="copyEmail">
           <i class="fa-solid fa-envelope"></i>
-          <p>{{ $t("contact.email") }}</p>
+          <p class="btn-text">{{ $t("contact.email") }}</p>
         </button>
         <a
           id="linkedin-btn"
@@ -39,7 +39,7 @@ const copyEmail = async () => {
           rel="noopener noreferrer"
         >
           <i class="fa-brands fa-linkedin"></i>
-          <p>{{ $t("contact.linkedin") }}</p>
+          <p class="btn-text">{{ $t("contact.linkedin") }}</p>
         </a>
       </div>
     </div>
@@ -78,6 +78,12 @@ const copyEmail = async () => {
 .contact-btn:hover {
   background-color: rgba(128, 128, 128, 0.15);
   transform: translateY(-2px);
+}
+
+#linkedin-btn:hover {
+  & .btn-text {
+    text-decoration: underline;
+  }
 }
 
 .contact-btn:active {
