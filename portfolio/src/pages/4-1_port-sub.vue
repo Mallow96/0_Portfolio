@@ -1,5 +1,7 @@
 <script setup></script>
 
-<template><p>this is port sub</p></template>
+<template>
+  <section><p>this is port sub</p></section>
+</template>
 
 <style scoped></style>

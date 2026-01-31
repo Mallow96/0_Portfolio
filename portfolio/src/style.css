@@ -49,6 +49,13 @@ html.dark {
   --lang-swtich-tabs-text: #9ca3af;
 }
 
+#app {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 body {
   background-color: var(--color-bg);
   color: var(--color-text);
@@ -70,21 +77,11 @@ button {
   cursor: pointer;
 }
 
-header {
-  position: sticky;
-  top: 0;
-  left: 0;
-  width: 100%;
-}
+/* header {
 
-section {
+} */
+
+main {
   padding-top: var(--gap-header-main);
   max-width: var(--container-w-main);
-}
-
-#app {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }

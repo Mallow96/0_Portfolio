@@ -1,5 +1,7 @@
 <script setup></script>
 
-<template><p>this is skills</p></template>
+<template>
+  <section><p>this is skills</p></section>
+</template>
 
 <style scoped></style>

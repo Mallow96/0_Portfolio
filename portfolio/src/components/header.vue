@@ -1,19 +1,14 @@
 <script setup>
 import Logo from "./logo.vue";
-import Settings from "./settings.vue";
+import MyNav from "../components/nav.vue";
 </script>
 
 <template>
   <header class="flex justify-between items-center">
-    <Logo />
-    <nav>
-      <ol class="flex justify-between items-center gap-7">
-        <li v-for="(item, index) in $tm('navItems')" :key="index">
-          {{ $rt(item) }}
-        </li>
-        <li><Settings /></li>
-      </ol>
-    </nav>
+    <router-link :to="{ name: 'main' }">
+      <Logo />
+    </router-link>
+    <MyNav />
   </header>
 </template>
 
@@ -21,6 +16,11 @@ import Settings from "./settings.vue";
 header {
   min-height: var(--header-h);
   padding: var(--header-padding-x) var(--header-padding-y);
+
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
 
   background-color: var(--color-bg-header);
   backdrop-filter: blur(12px);

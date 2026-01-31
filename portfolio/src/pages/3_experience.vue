@@ -1,5 +1,7 @@
 <script setup></script>
 
-<template><p>this is exp</p></template>
+<template>
+  <section><p>this is exp</p></section>
+</template>
 
 <style scoped></style>

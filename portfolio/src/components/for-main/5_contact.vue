@@ -1,7 +1,9 @@
 <script setup></script>
 
 <template>
-  <section><p>this is about</p></section>
+  <section id="contact">
+    <h3>this is contact</h3>
+  </section>
 </template>
 
 <style scoped></style>
