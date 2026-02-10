@@ -26,9 +26,12 @@ const handleNavClick = async (target, id = null) => {
       <li
         v-for="(item, index) in $tm('navItems')"
         :key="index"
-        class="basis-full flex justify-center items-center cursor-pointer h-full w-full hover:text-blue-400 hover:border-b-2 hover:border-blue-400"
+        class="basis-full h-full w-full hover:text-blue-400 hover:border-b-2 hover:border-blue-400"
       >
-        <a @click="handleNavClick(index)">
+        <a
+          @click="handleNavClick(index)"
+          class="flex justify-center items-center cursor-pointer w-full h-full"
+        >
           {{ $rt(item) }}
         </a>
       </li>
