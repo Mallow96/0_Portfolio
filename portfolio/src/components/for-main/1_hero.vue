@@ -1,4 +1,16 @@
-<script setup></script>
+<script setup>
+import { useRouter } from "vue-router";
+
+const router = useRouter();
+
+const handleClickPortfolio = () => {
+  router.push({ name: "portfolio" });
+};
+
+const handleClickContact = () => {
+  document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" });
+};
+</script>
 
 <template>
   <section id="hero" class="main-section">
@@ -23,11 +35,13 @@
       </p>
       <div class="btns w-full flex gap-8 justify-center">
         <button
+          @click="handleClickPortfolio()"
           class="btn-port bg-(--color-bg-main-btn) text-white hover:bg-(--color-bg-main-btn-hover)"
         >
           {{ $t("hero.btnP") }}
         </button>
         <button
+          @click="handleClickContact()"
           class="bg-(--color-bg-secondary-btn) hover:bg-(--color-bg-secondary-btn-hover)"
         >
           {{ $t("hero.btnC") }}
