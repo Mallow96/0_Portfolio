@@ -15,10 +15,10 @@ const handleClickContact = () => {
 <template>
   <section id="hero" class="main-section">
     <div class="container w-full h-96 flex flex-col items-center gap-8">
-      <h3 class="greeting text-5xl font-bold mb-4">
+      <h2 class="greeting text-5xl font-bold mb-4">
         {{ $t("hero.greeting") }}
         <span class="name">{{ $t("hero.name") }}</span>
-      </h3>
+      </h2>
       <p class="description flex gap-1 text-2xl">
         <span> {{ $t("hero.description") }} </span>
         <span class="text-blue-400 font-semibold">

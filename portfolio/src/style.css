@@ -22,6 +22,10 @@
   --color-bg-secondary-btn-hover: oklch(87.2% 0.01 258.338);
   --color-bg-header: rgba(255, 255, 255, 0.7);
 
+  --color-bg-home-contact: rgba(21, 93, 251, 0.1);
+  --color-bg-home-skills: rgba(146, 177, 255, 0.1);
+  --color-border-home-skills: rgb(215, 215, 215);
+
   --header-h: 5rem;
   --header-padding-x: 0.75rem;
   --header-padding-y: 4rem;
@@ -54,6 +58,11 @@ html.dark {
   --color-bg-main-btn-hover: oklch(70.7% 0.165 254.624);
   --color-bg-secondary-btn: rgb(30, 41, 57);
   --color-bg-secondary-btn-hover: oklch(55.1% 0.027 264.364);
+
+  --color-bg-home-contact: rgba(21, 93, 251, 0.1);
+  --color-bg-home-skills: rgba(24, 41, 84, 0.3);
+  --color-border-home-skills: rgba(255, 255, 255, 0.2);
+
   --lang-swtich-tabs-text: #9ca3af;
 }
 
@@ -128,6 +137,11 @@ h5 {
 }
 
 h2 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+h3 {
   font-size: 2rem;
   font-weight: bold;
 }

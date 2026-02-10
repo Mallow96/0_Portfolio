@@ -22,7 +22,7 @@ const copyEmail = async () => {
   <section id="contact" class="main-section">
     <div class="container gap-13">
       <div class="titles flex flex-col gap-8">
-        <h2>{{ $t("contact.title") }}</h2>
+        <h3>{{ $t("contact.title") }}</h3>
         <h4>{{ $t("contact.subtitle") }}</h4>
       </div>
 
@@ -53,7 +53,7 @@ const copyEmail = async () => {
 <style scoped>
 #contact {
   scroll-margin-top: calc(var(--header-h) + var(--gap-header-main));
-  background-color: rgba(21, 93, 251, 0.1);
+  background-color: var(--color-bg-home-contact);
 }
 
 .contact-btn {

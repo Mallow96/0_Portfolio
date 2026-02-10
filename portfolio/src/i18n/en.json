@@ -1,10 +1,10 @@
 {
   "navItems": {
-    "about": "About Me",
+    "about": "About",
     "skills": "Skills",
     "experience": "Experience",
     "portfolio": "Portfolio",
-    "contact": "Contact Me"
+    "contact": "Contact"
   },
 
   "settings": {
@@ -35,5 +35,24 @@
     "and": "and",
     "btnP": "My Portfolio",
     "btnC": "Contact Me"
+  },
+
+  "skills": {
+    "title": "Skills",
+    "translation": {
+      "d1": "Subtitle translation",
+      "d2": "Professional document translation",
+      "d3": "CAT tools proficiency"
+    },
+    "localization": {
+      "d1": "Interface and content localization",
+      "d2": "Adaptation and refinement",
+      "d3": "LQA and game testing"
+    },
+    "web": {
+      "d1": "Vue.js framework",
+      "d2": "RWD and browser compatibility",
+      "d3": "Version control: Git, GitHub"
+    }
   }
 }
