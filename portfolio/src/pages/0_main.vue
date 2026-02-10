@@ -7,7 +7,6 @@ import Contact from "../components/for-main/5_contact.vue";
 </script>
 
 <template>
-  <h2>this is main</h2>
   <Hero />
   <Skills />
   <Exp />

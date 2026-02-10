@@ -17,6 +17,9 @@
   --color-bg-settings: #f2f4f7;
   /* --color-bg-lang-tab: #8c8b8b; */
   --color-bg-main-btn: oklch(62.3% 0.214 259.815);
+  --color-bg-main-btn-hover: oklch(70.7% 0.165 254.624);
+  --color-bg-secondary-btn: #e8e8e8;
+  --color-bg-secondary-btn-hover: oklch(87.2% 0.01 258.338);
   --color-bg-header: rgba(255, 255, 255, 0.7);
 
   --header-h: 5rem;
@@ -47,6 +50,10 @@ html.dark {
   --color-text: #f9fafb;
   --color-bg-settings: #525f7f;
   --color-bg-lang-tab: #ffffff;
+  --color-bg-main-btn: oklch(62.3% 0.214 259.815);
+  --color-bg-main-btn-hover: oklch(70.7% 0.165 254.624);
+  --color-bg-secondary-btn: rgb(30, 41, 57);
+  --color-bg-secondary-btn-hover: oklch(55.1% 0.027 264.364);
   --lang-swtich-tabs-text: #9ca3af;
 }
 
@@ -64,7 +71,9 @@ html {
 body {
   background-color: var(--color-bg);
   color: var(--color-text);
-  transition: background-color 0.3s ease, color 0.3s ease;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
 
   min-height: 120vh;
   /* 測試用 */

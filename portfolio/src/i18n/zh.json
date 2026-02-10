@@ -20,5 +20,20 @@
     "email": "mencheliu@gmail.com",
     "linkedin": "我的 LinkedIn",
     "copied": "已複製電子郵件地址"
+  },
+
+  "hero": {
+    "greeting": "你好，我是",
+    "name": "劉綿哲",
+    "description": "我的專業技能包括",
+    "skills": {
+      "translation": "中英翻譯",
+      "localization": "在地化",
+      "web": "網頁前端開發"
+    },
+    "punctuation": "、",
+    "and": "與",
+    "btnP": "查看作品",
+    "btnC": "聯絡我"
   }
 }

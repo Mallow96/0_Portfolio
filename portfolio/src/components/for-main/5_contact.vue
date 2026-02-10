@@ -56,10 +56,6 @@ const copyEmail = async () => {
   background-color: rgba(21, 93, 251, 0.1);
 }
 
-/* .container {
-  gap: 3rem;
-} */
-
 .contact-btn {
   display: block;
   width: 18.75rem;
@@ -111,7 +107,9 @@ const copyEmail = async () => {
 /* Transition 動畫 */
 .fade-enter-active,
 .fade-leave-active {
-  transition: opacity 0.3s, transform 0.3s;
+  transition:
+    opacity 0.3s,
+    transform 0.3s;
 }
 
 .fade-enter-from,
