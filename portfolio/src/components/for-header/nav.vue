@@ -21,16 +21,24 @@ const handleNavClick = async (target, id = null) => {
 </script>
 
 <template>
-  <nav>
-    <ol class="flex justify-between items-center gap-7">
-      <li v-for="(item, index) in $tm('navItems')" :key="index">
+  <nav class="h-12">
+    <ol class="flex justify-between items-center h-full gap-2">
+      <li
+        v-for="(item, index) in $tm('navItems')"
+        :key="index"
+        class="basis-full flex justify-center items-center cursor-pointer h-full w-full hover:text-blue-400 hover:border-b-2 hover:border-blue-400"
+      >
         <a @click="handleNavClick(index)">
           {{ $rt(item) }}
         </a>
       </li>
-      <li><Settings /></li>
+      <li class="ms-3"><Settings /></li>
     </ol>
   </nav>
 </template>
 
-<style scoped></style>
+<style scoped>
+nav {
+  min-width: 30rem;
+}
+</style>
