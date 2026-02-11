@@ -3,59 +3,34 @@
 <template>
   <section id="skills" class="main-section">
     <div class="container gap-13">
-      <h3>{{ $t("skills.title") }}</h3>
+      <h3>{{ $t("skills.skillsTitle") }}</h3>
 
-      <div class="card-group flex flex-row gap-8 w-4/5 mx-auto">
-        <div class="card translation">
+      <div class="card-group grid grid-cols-3 gap-4 w-4/5">
+        <div
+          class="card"
+          v-for="(item, index) in $tm('skills.mySkills')"
+          :key="index"
+        >
           <div class="icon">
-            <span class="icon-wrap text-blue-400 bg-blue-800/20 p-2">
-              <span class="material-symbols-outlined"> translate </span>
+            <span class="icon-wrap">
+              <span class="material-symbols-outlined">
+                {{ $rt(item.iconName) }}
+              </span>
             </span>
           </div>
           <div class="card-title">
-            <h4>{{ $t("hero.skills.translation") }}</h4>
+            <h4>{{ $rt(item.name) }}</h4>
           </div>
           <div class="card-content">
             <ul>
-              <li>{{ $t("skills.translation.d1") }}</li>
-              <li>{{ $t("skills.translation.d2") }}</li>
-              <li>{{ $t("skills.translation.d3") }}</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="card localization">
-          <div class="icon">
-            <span class="icon-wrap text-purple-500 bg-purple-800/20">
-              <span class="material-symbols-outlined"> stadia_controller </span>
-            </span>
-          </div>
-          <div class="card-title">
-            <h4>{{ $t("hero.skills.localization") }}</h4>
-          </div>
-          <div class="card-content">
-            <ul>
-              <li>{{ $t("skills.localization.d1") }}</li>
-              <li>{{ $t("skills.localization.d2") }}</li>
-              <li>{{ $t("skills.localization.d3") }}</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="card web">
-          <div class="icon">
-            <span class="icon-wrap text-green-600 bg-green-800/20">
-              <span class="material-symbols-outlined"> code </span>
-            </span>
-          </div>
-          <div class="card-title">
-            <h4>{{ $t("hero.skills.web") }}</h4>
-          </div>
-          <div class="card-content">
-            <ul>
-              <li>{{ $t("skills.web.d1") }}</li>
-              <li>{{ $t("skills.web.d2") }}</li>
-              <li>{{ $t("skills.web.d3") }}</li>
+              <li
+                v-for="(i, index) in $tm(
+                  `skills.mySkills.${index}.description`,
+                )"
+                :key="index"
+              >
+                {{ $rt(i) }}
+              </li>
             </ul>
           </div>
         </div>
@@ -101,6 +76,24 @@ ul {
   justify-content: center;
   align-items: center;
   padding: 0.75rem;
+
+  color: oklch(59.2% 0.249 0.584);
+  background-color: oklch(45.9% 0.187 3.815 /0.2);
+}
+
+.card:nth-child(1) .icon-wrap {
+  color: oklch(54.6% 0.245 262.881);
+  background-color: oklch(42.4% 0.199 265.638 /0.2);
+}
+
+.card:nth-child(2) .icon-wrap {
+  color: oklch(62.7% 0.194 149.214);
+  background-color: oklch(44.8% 0.119 151.328 /0.2);
+}
+
+.card:nth-child(3) .icon-wrap {
+  color: oklch(55.8% 0.288 302.321);
+  background-color: oklch(43.8% 0.218 303.724 /0.2);
 }
 
 .card > .card-title > h4 {

@@ -17,7 +17,7 @@
   "contact": {
     "title": "我的聯絡資訊",
     "subtitle": "歡迎透過以下方式聯繫我。",
-    "email": "mencheliu@gmail.com",
+    "email": "mencheliu{'@'}gmail.com",
     "linkedin": "我的 LinkedIn",
     "copied": "已複製電子郵件地址"
   },
@@ -38,21 +38,35 @@
   },
 
   "skills": {
-    "title": "專業技能",
-    "translation": {
-      "d1": "影視字幕翻譯",
-      "d2": "專業文件翻譯",
-      "d3": "CAT工具使用"
-    },
-    "localization": {
-      "d1": "介面與內容在地化",
-      "d2": "文化脈絡改編與潤飾",
-      "d3": "LQA與遊戲測試"
-    },
-    "web": {
-      "d1": "Vue.js 框架",
-      "d2": "響應式設計與跨瀏覽器相容性",
-      "d3": "版本控制：Git、GitHub"
+    "skillsTitle": "專業技能",
+    "mySkills": {
+      "translation": {
+        "name": "中英翻譯",
+        "iconName": "translate",
+        "description": {
+          "d1": "影視字幕翻譯",
+          "d2": "專業文件翻譯",
+          "d3": "CAT工具使用"
+        }
+      },
+      "localization": {
+        "name": "遊戲在地化",
+        "iconName": "stadia_controller",
+        "description": {
+          "d1": "介面與內容在地化",
+          "d2": "文化脈絡改編與潤飾",
+          "d3": "LQA與遊戲測試"
+        }
+      },
+      "web": {
+        "name": "網頁前端開發",
+        "iconName": "code",
+        "description": {
+          "d1": "Vue.js 框架",
+          "d2": "響應式設計與跨瀏覽器相容性",
+          "d3": "版本控制：Git、GitHub"
+        }
+      }
     }
   }
 }
