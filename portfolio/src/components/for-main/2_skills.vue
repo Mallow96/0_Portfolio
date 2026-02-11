@@ -5,7 +5,7 @@
     <div class="container gap-13">
       <h3>{{ $t("skills.skillsTitle") }}</h3>
 
-      <div class="card-group grid grid-cols-3 gap-4 w-4/5">
+      <div class="card-group grid grid-cols-3 gap-4 w-full">
         <div
           class="card"
           v-for="(item, index) in $tm('skills.mySkills')"
@@ -59,7 +59,7 @@ ul {
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  flex: 1 1 0;
+  transition: border-color 0.3s ease;
 }
 
 .card:hover {

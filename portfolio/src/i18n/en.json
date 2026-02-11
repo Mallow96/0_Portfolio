@@ -44,9 +44,10 @@
         "name": "Translation",
         "iconName": "translate",
         "description": {
-          "d1": "Subtitle translation",
-          "d2": "Professional document translation",
-          "d3": "CAT tools proficiency"
+          "d1": "Translation and proofreading (MTPE)",
+          "d2": "Subtitle translation",
+          "d3": "CAT tools proficiency",
+          "d4": "Terminology and style guide management"
         }
       },
       "localization": {
@@ -65,6 +66,51 @@
           "d1": "Vue.js framework",
           "d2": "RWD and browser compatibility",
           "d3": "Version control: Git, GitHub"
+        }
+      }
+    }
+  },
+
+  "experience": {
+    "expTitle": "工作經歷",
+    "myExp": {
+      "exp1": {
+        "position": "Research Assistant",
+        "type": "Full-time",
+        "iconName": "fa-solid fa-i",
+        "company": "Industrial Technology Research Institute (ITRI)",
+        "duration": "Mar 2023 - Dec 2024",
+        "description": {
+          "d1": "Assiged to the Cosmetics Division of the Taiwan Food and Drug Administration (Taiwan FDA)",
+          "d2": "Assisted in organizing and participating in meetings, including at least 8 online meetings and 1 annual in-person meeting in 2024, and at least 16 online meetings and 1 annual in-person meeting in 2024",
+          "d3": "High-quality Content: translating and proofreading the Taiwan FDA's English website and publications, ensuring accuracy and consistency of terminology in all ICCR documennts",
+          "d4": "Self discipline and project management: as a member of the ICCR Secretariat, demonstrated strong communication and document version control skills, adhering to terminology and style guide standards"
+        }
+      },
+      "exp2": {
+        "position": "Game Localization",
+        "type": "Part-time",
+        "iconName": "fa-solid fa-s",
+        "company": "Sinkhole Studio",
+        "duration": "Mar 2022 - May 2024",
+        "description": {
+          "d1": "Localized Ogu and the Secret Forest and 3 Minute Heros into Chinese, including interface and in-game content",
+          "d2": "Full lifecycle localization: from beta version to final release and subsequent updates, ensuring consistent quality and terminology across all versions",
+          "d3": "LQA and Playtesting: Executed comprehensive playtesting to perform linguistic QA. Streamlined the UI/UX by identifying and fixing text overflows, contextual errors, and logical phrasing issues to ensure a seamless localized experience",
+          "d4": "Terminology Management: Developed and maintained comprehensive terminology databases to ensure zero-variance in core game data, item names, and skill descriptions throughout the product lifecycle"
+        }
+      },
+      "exp3": {
+        "position": "Subtitle Translator",
+        "type": "Part-time",
+        "iconName": "fa-solid fa-i",
+        "company": "Iyuno SDI Group",
+        "duration": "Mar 2020 - Jun 2025",
+        "description": {
+          "d1": "Project Execution: Managed translation and QC for 50+ episodes across 10+ high-profile streaming and TV projects",
+          "d2": "Narrative Flow: Expert at crafting natural dialogue and rhythmic subtitles, avoiding stiff literal translations to maximize viewer immersion",
+          "d3": "Cultural Adaptation: Specialized in bidirectional CN/EN translation, resolving complex cultural metaphors while adhering to rigorous technical constraints (character limits/timing)",
+          "d4": "MTPE Excellence: Experienced in refining MT output into high-quality, persona-driven dialogue that feels authentic and idiomatic"
         }
       }
     }
