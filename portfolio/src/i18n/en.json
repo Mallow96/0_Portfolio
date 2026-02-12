@@ -89,7 +89,7 @@
       },
       "exp2": {
         "position": "Game Localization",
-        "type": "Part-time",
+        "type": "Freelance",
         "iconName": "fa-solid fa-s",
         "company": "Sinkhole Studio",
         "duration": "Mar 2022 - May 2024",
@@ -102,7 +102,7 @@
       },
       "exp3": {
         "position": "Subtitle Translator",
-        "type": "Part-time",
+        "type": "Freelance",
         "iconName": "fa-solid fa-i",
         "company": "Iyuno SDI Group",
         "duration": "Mar 2020 - Jun 2025",
@@ -114,5 +114,9 @@
         }
       }
     }
+  },
+  "portfolio": {
+    "portTitle": "Portfolio",
+    "btnP": "More"
   }
 }

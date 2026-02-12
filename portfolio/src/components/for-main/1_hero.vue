@@ -63,12 +63,12 @@ const handleClickContact = () => {
   border-radius: 100rem;
 }
 
-.btns > button:hover {
+/* .btns > button:hover {
   transform: translateY(-1px);
   transition: all 0.3s ease;
 }
 
 .btns > button:active {
   scale: 95%;
-}
+} */
 </style>

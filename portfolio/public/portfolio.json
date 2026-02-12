@@ -3,7 +3,10 @@
     "id": 1,
     "pinned": true,
     "title": { "zh": "電商平台開發", "en": "E-commerce Platform" },
-    "category": "Web",
+    "category": {
+      "zh": "網頁開發",
+      "en": "Web"
+    },
     "details": {
       "zh": [
         "使用 Vue 3 與 Pinia 進行狀態管理",
@@ -21,7 +24,10 @@
     "id": 2,
     "pinned": false,
     "title": { "zh": "電子書平台開發", "en": "E-book Platform" },
-    "category": "Web",
+    "category": {
+      "zh": "網頁開發",
+      "en": "Web"
+    },
     "details": {
       "zh": [
         "使用 Vue 3 與 Pinia 進行狀態管理",

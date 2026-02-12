@@ -30,6 +30,11 @@ const copyEmail = async () => {
         <button id="email-btn" class="contact-btn" @click="copyEmail">
           <i class="fa-solid fa-envelope"></i>
           <p class="btn-text">{{ $t("contact.email") }}</p>
+          <transition name="fade">
+            <span v-if="copied" class="copy-tooltip">{{
+              $t("contact.copied")
+            }}</span>
+          </transition>
         </button>
         <a
           id="linkedin-btn"
@@ -44,16 +49,12 @@ const copyEmail = async () => {
       </div>
     </div>
   </section>
-
-  <transition name="fade">
-    <span v-if="copied" class="copy-tooltip">{{ $t("contact.copied") }}</span>
-  </transition>
 </template>
 
 <style scoped>
 #contact {
   scroll-margin-top: calc(var(--header-h) + var(--gap-header-main));
-  background-color: var(--color-bg-home-contact);
+  /* background-color: var(--color-bg-home-contact); */
 }
 
 .contact-btn {
@@ -62,6 +63,7 @@ const copyEmail = async () => {
   height: 4.5rem;
   border: 1px solid gray;
   border-radius: 0.5rem;
+  position: relative;
 
   display: flex;
   justify-content: center;
@@ -93,7 +95,7 @@ const copyEmail = async () => {
 
 .copy-tooltip {
   position: absolute;
-  top: 1rem;
+  top: -1rem;
   left: 50%;
   transform: translateX(-50%);
   background: #42b983;
