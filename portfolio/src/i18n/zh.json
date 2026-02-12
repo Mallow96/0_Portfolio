@@ -117,6 +117,10 @@
 
   "portfolio": {
     "portTitle": "作品集",
-    "btnP": "查看更多"
+    "btnP": "查看更多",
+    "btnLink": "查看連結",
+    "linkIcon": "fa-solid fa-arrow-up-right-from-square",
+    "codeIcon": "fa-brands fa-github",
+    "btnCode": "查看原始碼"
   }
 }

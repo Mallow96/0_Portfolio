@@ -2,31 +2,61 @@
   {
     "id": 1,
     "pinned": true,
-    "title": { "zh": "電商平台開發", "en": "E-commerce Platform" },
+    "title": { "zh": "美食探索平台", "en": "Restaurant Explorer" },
     "category": {
-      "zh": "網頁開發",
-      "en": "Web"
+      "zh": "前端開發",
+      "en": "Frontend"
+    },
+    "tag": {
+      "t1": {
+        "zh": "網頁開發",
+        "en": "Web"
+      },
+      "t2": {
+        "zh": "UI/UX設計",
+        "en": "UI/UX design"
+      }
+    },
+    "description": {
+      "zh": "一個提供餐廳資訊、評論與預訂功能的美食探索平台。參與階段包括產品發想、UI/UX設計，以及前端開發。",
+      "en": "A culinary exploration platform offering user reviews and reservation services. Involved in product ideation, UI/UX design, and frontend development."
     },
     "details": {
       "zh": [
-        "使用 Vue 3 與 Pinia 進行狀態管理",
-        "整合 Axios 串接 RESTful API",
-        "響應式設計，支援行動裝置瀏覽"
+        "使用 Vue 3 與 Vite 進行開發",
+        "使用 Pinia 進行全域狀態管理",
+        "使用 Axios 非同步讀取，模擬後端環境"
       ],
       "en": [
-        "Developed with Vue 3 and Pinia",
-        "Integrated RESTful APIs using Axios",
-        "Responsive design for mobile support"
+        "Developed with Vue 3 and Vite",
+        "State management with Pinia",
+        "Asynchronous data fetching with Axios, simulating backend environment"
       ]
-    }
+    },
+    "image": "../src/assets/img/2026-01-15 172110.png"
   },
   {
     "id": 2,
     "pinned": false,
     "title": { "zh": "電子書平台開發", "en": "E-book Platform" },
     "category": {
-      "zh": "網頁開發",
-      "en": "Web"
+      "zh": "前端開發",
+      "en": "Frontend"
+    },
+    "tag": {
+      "t1": {
+        "zh": "網頁開發",
+        "en": "Web"
+      },
+      "t2": {
+        "zh": "UI/UX設計",
+        "en": "UI/UX design"
+      }
+    },
+
+    "description": {
+      "zh": "一個提供餐廳資訊、評論與預訂功能的美食探索平台。參與階段包括產品發想、UI/UX設計，以及前端開發。",
+      "en": "A culinary exploration platform offering restaurant information, user reviews, and reservation services. Personally involved in every phase, including product ideation, UI/UX design, and frontend development."
     },
     "details": {
       "zh": [
@@ -39,6 +69,7 @@
         "Integrated RESTful APIs using Axios",
         "Responsive design for mobile support"
       ]
-    }
+    },
+    "image": "../src/assets/img/2026-01-15 172110.png"
   }
 ]
