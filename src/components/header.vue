@@ -49,7 +49,7 @@ header {
   border: 1px solid white;
   border-radius: 99rem;
   padding-left: var(--header-padding-x);
-  padding-right: calc(var(--header-padding-x) * 1.5);
+  padding-right: calc(var(--header-padding-x) * 2);
 
   background-color: var(--color-bg-header);
   backdrop-filter: blur(4px);
