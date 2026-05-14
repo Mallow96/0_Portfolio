@@ -3,7 +3,7 @@ import Logo from "./logo.vue";
 import MyNav from "../components/for-header/nav.vue";
 import { ref } from "vue";
 
-const headerExpand = ref(true);
+const headerExpand = ref(false);
 
 const toggleHeader = () => {
   headerExpand.value = !headerExpand.value;
@@ -30,6 +30,10 @@ const toggleHeader = () => {
       :class="{ 'menu-active': headerExpand }"
       @click="toggleHeader()"
     >
+      <!-- <transition name="expand">
+        <p v-if="headerExpand">Menu</p>
+      </transition> -->
+
       <i class="fa-solid fa-bars"></i>
     </button>
   </header>
