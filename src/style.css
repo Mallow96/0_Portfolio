@@ -19,7 +19,7 @@
   --color-bg-main-btn: oklch(62.3% 0.214 259.815);
   --color-bg-main-btn-hover: oklch(70.7% 0.165 254.624);
   --color-bg-secondary-btn: #e8e8e8;
-  --color-bg-secondary-btn-hover: oklch(87.2% 0.01 258.338);
+  --color-bg-secondary-btn-hover: oklab(87.168% -0.00188 -0.00925);
   --color-bg-tag: rgba(31, 79, 107, 0.4);
 
   --color-bg-header: rgba(255, 255, 255, 0.7);
@@ -30,8 +30,8 @@
   --color-bg-home-exp-icon: oklch(92.9% 0.013 255.508);
 
   --header-h: 5rem;
-  --header-padding-x: 0.75rem;
-  --header-padding-y: 4rem;
+  --header-padding-x: 4rem;
+  --header-padding-y: 0.75rem;
   --gap-header-main: 2rem;
   --settings-icon-size: 1.5rem;
   --settings-menu-w: 18.75rem;

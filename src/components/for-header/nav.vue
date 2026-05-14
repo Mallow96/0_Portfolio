@@ -21,7 +21,7 @@ const handleNavClick = async (target, id = null) => {
 </script>
 
 <template>
-  <nav class="h-12">
+  <nav class="">
     <ol class="flex justify-between items-center h-full gap-2">
       <li
         v-for="(item, index) in $tm('navItems')"
@@ -30,7 +30,7 @@ const handleNavClick = async (target, id = null) => {
       >
         <a
           @click="handleNavClick(index)"
-          class="flex justify-center items-center cursor-pointer w-full h-full"
+          class="flex justify-center items-center py-2 cursor-pointer w-full h-full"
         >
           {{ $rt(item) }}
         </a>
