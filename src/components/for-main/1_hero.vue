@@ -38,7 +38,7 @@ const handleClickContact = () => {
           @click="handleClickPortfolio()"
           class="btn-port bg-(--color-bg-main-btn) text-white hover:bg-(--color-bg-main-btn-hover)"
         >
-          <span class="hover:font-semibold"> {{ $t("hero.btnP") }}</span>
+          <span> {{ $t("hero.btnP") }}</span>
         </button>
         <button
           @click="handleClickContact()"
@@ -69,9 +69,11 @@ const handleClickContact = () => {
   color: var(--color-main-orange);
 }
 
-.btn-port > span:hover {
-  background: linear-gradient(90deg, #60a5fa, #a78bfa);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+.btn-port:hover {
+  span {
+    background: linear-gradient(90deg, #60a5fa, #facc8b);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
 }
 </style>
