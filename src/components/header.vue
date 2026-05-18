@@ -69,12 +69,19 @@ header {
 
 .menu-icon,
 .menu-text {
-  font-size: 1.25rem;
+  font-size: 1rem;
+}
+
+.menu-icon {
+  margin: 0 0.3rem;
 }
 
 .menu-wrapper {
-  font-size: 1.25rem;
-  padding: 0.45rem 0.65rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 0.45rem 0.75rem;
   border: 1px solid white;
   border-radius: 99rem;
   position: absolute;
@@ -92,7 +99,8 @@ header {
 
   transition:
     background-color 0.3s ease,
-    border-radius 0.3s ease-out 0.2s; /* 收合時，延遲 0.6s 才變回圓角 */
+    border-radius 0.3s ease-out 0.2s,
+    gap 0.3s ease-out 0.5s;
 }
 
 .menu-active.menu-wrapper:hover {
