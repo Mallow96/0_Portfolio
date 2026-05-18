@@ -30,11 +30,11 @@ const toggleHeader = () => {
       :class="{ 'menu-active': headerExpand }"
       @click="toggleHeader()"
     >
-      <!-- <transition name="expand">
-        <p v-if="headerExpand">Menu</p>
-      </transition> -->
+      <transition name="fade">
+        <span v-if="!headerExpand" class="menu-text">Menu</span>
+      </transition>
 
-      <i class="fa-solid fa-bars"></i>
+      <i class="fa-solid fa-bars menu-icon"></i>
     </button>
   </header>
 </template>
@@ -62,13 +62,24 @@ header {
   height: 100%; /* 展開後 */
 }
 
+.menu-text {
+  width: 100%; /* 展開後 */
+  height: 100%; /* 展開後 */
+}
+
+.menu-icon,
+.menu-text {
+  font-size: 1.25rem;
+}
+
 .menu-wrapper {
-  font-size: 1.4rem;
+  font-size: 1.25rem;
   padding: 0.45rem 0.65rem;
   border: 1px solid white;
-  border-radius: 0.6rem;
+  border-radius: 99rem;
   position: absolute;
   right: calc(var(--header-padding-x) * 1.5);
+  min-height: 2.75rem;
 }
 
 .menu-wrapper:hover {
@@ -77,13 +88,18 @@ header {
 
 .menu-active {
   background-color: var(--color-bg-secondary-btn-hover);
+  border-radius: 0.6rem;
+
+  transition:
+    background-color 0.3s ease,
+    border-radius 0.3s ease-out 0.2s; /* 收合時，延遲 0.6s 才變回圓角 */
 }
 
 .menu-active.menu-wrapper:hover {
   background-color: var(--color-bg-secondary-btn);
 }
 
-/* --- Transition  --- */
+/* --- Transition: header  --- */
 
 .expand-enter-active {
   transition:
@@ -106,5 +122,32 @@ header {
   width: 0;
   height: 0;
   opacity: 0;
+}
+
+/* transition: menu button */
+
+.fade-enter-active {
+  /* 文字進入動畫與 border-radius 延遲同步 */
+  transition: all 0.3s ease-out 0.6s;
+  overflow: hidden;
+}
+
+.fade-leave-active {
+  /* 展開時文字立刻消失 */
+  transition: all 0.2s ease-in;
+  overflow: hidden;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  max-width: 0;
+  opacity: 0;
+  margin-right: 0;
+}
+
+.fade-enter-to,
+.fade-leave-from {
+  max-width: 100px;
+  opacity: 1;
 }
 </style>
