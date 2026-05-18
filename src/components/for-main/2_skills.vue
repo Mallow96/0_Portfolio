@@ -19,7 +19,7 @@
             </span>
           </div>
           <div class="card-title">
-            <h4>{{ $rt(item.name) }}</h4>
+            <h4 class="font-semibold">{{ $rt(item.name) }}</h4>
           </div>
           <div class="card-content">
             <ul>
@@ -60,10 +60,13 @@ ul {
   flex-direction: column;
   gap: 1rem;
   transition: border-color 0.3s ease;
+
+  border: 1px solid var(--color-secondary-gray);
 }
 
 .card:hover {
-  border: 1px solid rgb(90, 125, 231);
+  border: 1px solid var(--color-dark-orange);
+  transform: translateY(-2px);
 }
 
 .card .icon span {
@@ -77,26 +80,16 @@ ul {
   align-items: center;
   padding: 0.75rem;
 
-  color: oklch(59.2% 0.249 0.584);
-  background-color: oklch(45.9% 0.187 3.815 /0.2);
-}
-
-.card:nth-child(1) .icon-wrap {
-  color: oklch(54.6% 0.245 262.881);
-  background-color: oklch(42.4% 0.199 265.638 /0.2);
-}
-
-.card:nth-child(2) .icon-wrap {
-  color: oklch(62.7% 0.194 149.214);
-  background-color: oklch(44.8% 0.119 151.328 /0.2);
-}
-
-.card:nth-child(3) .icon-wrap {
-  color: oklch(55.8% 0.288 302.321);
-  background-color: oklch(43.8% 0.218 303.724 /0.2);
+  color: var(--color-text);
+  background-color: var(--color-home-skills-icon);
 }
 
 .card > .card-title > h4 {
   text-align: start;
+  color: var(--color-main-orange);
+}
+
+.card-content {
+  color: var(--color-text);
 }
 </style>

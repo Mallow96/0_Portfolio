@@ -81,8 +81,11 @@ header {
   justify-content: center;
   align-items: center;
 
+  background-color: var(--color-bg-main-btn);
+  color: var(--color-btn-text);
+
   padding: 0.45rem 0.75rem;
-  border: 1px solid white;
+  /* border: 1px solid var(--color-btn-text); */
   border-radius: 99rem;
   position: absolute;
   right: calc(var(--header-padding-x) * 1.5);
@@ -90,11 +93,11 @@ header {
 }
 
 .menu-wrapper:hover {
-  background-color: var(--color-bg-secondary-btn-hover);
+  background-color: var(--color-bg-main-btn-hover);
 }
 
 .menu-active {
-  background-color: var(--color-bg-secondary-btn-hover);
+  background-color: var(--color-bg-main-btn-hover);
   border-radius: 0.6rem;
 
   transition:
@@ -104,7 +107,7 @@ header {
 }
 
 .menu-active.menu-wrapper:hover {
-  background-color: var(--color-bg-secondary-btn);
+  background-color: var(--color-bg-main-btn);
 }
 
 /* --- Transition: header  --- */

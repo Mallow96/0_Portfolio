@@ -12,22 +12,28 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  --color-bg: rgb(255, 255, 255);
-  --color-text: #1f2937;
-  --color-bg-settings: #f2f4f7;
-  /* --color-bg-lang-tab: #8c8b8b; */
-  --color-bg-main-btn: oklch(62.3% 0.214 259.815);
-  --color-bg-main-btn-hover: oklch(70.7% 0.165 254.624);
-  --color-bg-secondary-btn: #e8e8e8;
-  --color-bg-secondary-btn-hover: oklab(87.168% -0.00188 -0.00925);
+  --color-bg: #dadbd4;
+  --color-text: #1e1f1c;
+  --color-main-orange: #ff6f4a;
+  --color-dark-orange: #d65d3e;
+  --color-secondary-gray: #a1a29d;
+  --color-btn-text: #f2f2f0;
+  /* --color-btn-text-hover: #ffb4a1; */
+  --color-bg-settings: #e6e7e2;
+  --color-bg-main-btn: #1e1f1c;
+  --color-bg-main-btn-hover: #424340;
+  --color-bg-secondary-btn: #bfc0bc;
+  --color-bg-secondary-btn-hover: #cecfcc;
   --color-bg-tag: rgba(31, 79, 107, 0.4);
 
   --color-bg-header: rgba(255, 255, 255, 0.7);
 
   --color-bg-home-contact: rgba(21, 93, 251, 0.1);
-  --color-bg-home-skills: rgba(146, 177, 255, 0.1);
+  --color-bg-home-skills: #b7b8b222;
   --color-border-home-skills: rgb(215, 215, 215);
   --color-bg-home-exp-icon: oklch(92.9% 0.013 255.508);
+
+  --color-home-skills-icon: #ff9d845a;
 
   --header-h: 5rem;
   --header-padding-x: 4rem;

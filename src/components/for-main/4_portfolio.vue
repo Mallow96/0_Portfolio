@@ -38,7 +38,7 @@ onMounted(() => {
       <div class="bot w-full flex justify-center">
         <button
           type="button"
-          class="bg-gray-600 p-2 rounded-full hover:bg-gray-400"
+          class="btn-more px-4 py-2 rounded-full"
           @click="handleClickMore()"
         >
           {{ $t("portfolio.btnP") }}<i class="fa-solid fa-chevron-right"></i>
@@ -57,6 +57,15 @@ onMounted(() => {
   border: 1px solid rgb(180, 180, 180);
   border-radius: 0.75rem;
   padding: 1rem;
+}
+
+.btn-more {
+  background-color: var(--color-bg-main-btn);
+  color: var(--color-btn-text);
+}
+
+.btn-more:hover {
+  background-color: var(--color-bg-main-btn-hover);
 }
 
 ul {

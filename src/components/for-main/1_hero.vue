@@ -21,15 +21,15 @@ const handleClickContact = () => {
       </h2>
       <p class="description flex gap-1 text-2xl">
         <span> {{ $t("hero.description") }} </span>
-        <span class="text-blue-400 font-semibold">
+        <span class="skill font-semibold">
           {{ $t("hero.skills.translation") }}
         </span>
         <span>{{ $t("hero.punctuation") }}</span>
-        <span class="text-purple-500 font-semibold">
+        <span class="skill font-semibold">
           {{ $t("hero.skills.localization") }}
         </span>
         <span>{{ $t("hero.and") }}</span>
-        <span class="text-green-600 font-semibold">
+        <span class="skill font-semibold">
           {{ $t("hero.skills.web") }}
         </span>
       </p>
@@ -38,7 +38,7 @@ const handleClickContact = () => {
           @click="handleClickPortfolio()"
           class="btn-port bg-(--color-bg-main-btn) text-white hover:bg-(--color-bg-main-btn-hover)"
         >
-          {{ $t("hero.btnP") }}
+          <span class="hover:font-semibold"> {{ $t("hero.btnP") }}</span>
         </button>
         <button
           @click="handleClickContact()"
@@ -52,10 +52,12 @@ const handleClickContact = () => {
 </template>
 
 <style scoped>
+.greeting {
+  color: var(--color-text);
+}
+
 .greeting > .name {
-  background: linear-gradient(90deg, #60a5fa, #a78bfa);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  font-size: 3.5rem;
 }
 
 .btns > button {
@@ -63,12 +65,13 @@ const handleClickContact = () => {
   border-radius: 100rem;
 }
 
-/* .btns > button:hover {
-  transform: translateY(-1px);
-  transition: all 0.3s ease;
+.description > .skill {
+  color: var(--color-main-orange);
 }
 
-.btns > button:active {
-  scale: 95%;
-} */
+.btn-port > span:hover {
+  background: linear-gradient(90deg, #60a5fa, #a78bfa);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 </style>
