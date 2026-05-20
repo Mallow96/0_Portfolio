@@ -56,7 +56,7 @@ header {
   padding-right: calc(var(--header-padding-x) * 2);
 
   background-color: var(--color-bg-header);
-  backdrop-filter: blur(4px);
+  backdrop-filter: blur(2px);
 
   width: 100%; /* 展開後 */
   height: 100%; /* 展開後 */
